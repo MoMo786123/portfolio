@@ -1,17 +1,17 @@
-import ExpenseDate from './ExpenseDate.js'
-import './ExpenseItem.css'
+import ExpenseDate from './ExpenseDate.js';
+import './ExpenseItem.css';
 
 function ExpenseItem(props) {
   return (
-        <div classname='expense-item' >
-          <ExpenseDate date={props.date} />
-            <div classname='expence-item__description' >
+        <div className="expense-item">
+          <ExpenseDate date={props.date}/>
+            <div className="expense-item__description">
               <h2>{props.title}</h2>
-              <div classname='expense-item_price'>${props.amount}</div>
+              <div className='expense-item__price'>${props.amount}</div>
           </div>
         </div>
-  ) 
-};
+  );
+}
 
 export default ExpenseItem;
 
