@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ExpenseDate from './ExpenseDate.js';
 import Card from './UI/card.js';
 import './ExpenseItem.css';
