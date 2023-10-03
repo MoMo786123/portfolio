@@ -7,7 +7,7 @@ function App() {
     {
       id: 'e1',
       title: 'Toilet Paper',
-      amount: 94.12,
+      amount: 5.00,
       date: new Date(2023, 9, 3),
     },
     { 
@@ -32,7 +32,6 @@ function App() {
     <div>
       <h2>My first project</h2>
       <Expenses items={expenses} />
-
     </div>
   );
 }
