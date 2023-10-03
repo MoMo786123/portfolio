@@ -1,6 +1,6 @@
 import './card.css';
 
-function Card() {
+function Card(props) {
     return <div className="card"></div>;
 }
 
