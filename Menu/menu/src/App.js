@@ -3,6 +3,7 @@ import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
 import React from 'react';
 import Header from './components/Header';
+import Concepts from './components/concept';
 
 const concepts = [
   {
@@ -30,11 +31,7 @@ function App() {
     <div>
       <Header />
       <ul id="concepts">
-        <li className="concept">
-          <img src={concepts[0].image} alt={concepts[0].title} />
-          <h2>{concepts[0].title}</h2>
-          <p>{concepts[0].description}</p>
-        </li>
+        <Concept image={concepts[0].image} />
         <li className="concept">
           <img src={concepts[1].image} alt={concepts[0].title} />
           <h2>{concepts[1].title}</h2>
