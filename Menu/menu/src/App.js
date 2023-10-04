@@ -31,17 +31,21 @@ function App() {
     <div>
       <Header />
       <ul id="concepts">
-        <Concept image={concepts[0].image} />
-        <li className="concept">
-          <img src={concepts[1].image} alt={concepts[0].title} />
-          <h2>{concepts[1].title}</h2>
-          <p>{concepts[1].description}</p>
-        </li>
-        <li className="concept">
-          <img src={concepts[2].image} alt={concepts[0].title} />
-          <h2>{concepts[2].title}</h2>
-          <p>{concepts[2].description}</p>
-        </li>
+        <Concepts 
+        image={concepts[0].image} 
+        title={concepts[0].title} 
+        description={concepts[0].description}
+        />
+       <Concepts 
+        image={concepts[1].image} 
+        title={concepts[1].title} 
+        description={concepts[1].description}
+        />
+        <Concepts 
+        image={concepts[2].image} 
+        title={concepts[2].title} 
+        description={concepts[2].description}
+        />
       </ul>
     </div>
   );
